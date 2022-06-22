@@ -13,11 +13,12 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form">
-        <input id="name" typ="text" placeholder="name">
-        <input id="email" placeholder="email">
+        <input id="name" typ="text" placeholder="name" required>
+        <input id="email" type="email" placeholder="email" required >
         <span id="email_validation"></span>
-        <input id="number">
-        <span id="Number_validation"></span>
+        <input id="number" type="number" min="18" max="65">
+        <span id="number_validation"></span>
+
     </form>
 
     <script src="js/index.js"></script>
