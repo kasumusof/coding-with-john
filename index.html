@@ -3,50 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Coding With John</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1 id="title">Coding With John Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <section class="container-fluid container">
 
-    <form id="survey-form">
-        <label for="name" id="name-label">Enter your name</label>
-        <input id="name" typ="text" placeholder="name" required>
-        <label for="email" id="email-label">Enter your email</label>
-        <input id="email" type="email" placeholder="email" required>
-        <label for="number" id="number-label">Enter your age</label>
-        <span id="email_validation"></span>
-        <input id="number" type="number" min="18" max="65" placeholder="age">
-        <span id="number_validation"></span>
-        <select id="dropdown">
-            <option value="married">married</option>
-            <option value="single">single</option>
-        </select>
-
-        <fieldset id="us-citizen">
-            <label for="us-citizen">Are You a US Citizen</label> <br>
-            <input type="radio" name="us-citizen" value="yes">Yes <br>
-            <input type="radio" name="us-citizen" value="no">No <br>
-
-        </fieldset>
-        <fieldset id="hobbies">
-            <label for="hobbies">Hobbies: select values that apply</label> <br>
-            <input type="checkbox" value="soccer"> soccer <br>
-            <input type="checkbox" value="basketball">basketball <br>
-            <input type="checkbox" value="singing">singing<br>
-            <input type="checkbox" value="chess">chess<br>
-            <input type="checkbox" value="guitar">guitar<br>
-            <input type="checkbox" value="dancing">dancing<br>
-            <input type="checkbox" value="sleeping">sleeping<br>
-        </fieldset>
-
-        <label for="additional-comments" id="comments-label">If you have addtional comments, kindly share.</label> <br>
-        <textarea id="additional-comments" placeholder="Addtional Comments"></textarea>
-
-        <button id="submit">submit</button>
+      <h1 id="title">Coding With John Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+  
+      <form id="survey-form" class="form-label">
+          <label class="input-group-text" for="name" id="name-label">Enter your name</label>
+          <input id="name" class="form-control is-invalid" type="text" placeholder="name" required>
+          <label class="input-group-text" for="email"  id="email-label">Enter your email</label>
+          <input id="email" class="form-control is-invalid" type="email" placeholder="email" required>
+          <label class="input-group-text" for="number" id="number-label">Enter your age</label>
+          <input id="number" class="form-control is-invalid" type="number" min="18" max="65" placeholder="age">
+          
+          <label for="dropdown" class="input-group-text" id="dropdown-label">Marital Status</label>
+          <select id="dropdown" class="form-select">
+              <option value="married">married</option>
+              <option value="single">single</option>
+          </select>
+  
+          <fieldset id="us-citizen">
+              <label class="input-group-text" for="us-citizen">Are You a US Citizen</label>
+              <input class="form-check-input" type="radio" name="us-citizen" value="yes">Yes
+              <input class="form-check-input" type="radio" name="us-citizen" value="no">No
+          </fieldset>
+          <fieldset id="hobbies">
+              <label class="input-group-text">Hobbies: select values that apply</label>
+              <input class="form-check-input" value="soccer" type="checkbox" id="soccer">
+              <label class="form-check-label" for="soccer">Soccer </label>
+              <input class="form-check-input" value="basketball" type="checkbox" id="basketball"> 
+              <label class="form-check-label" for="basketball">Basketball </label>
+              <input class="form-check-input" value="singing" type="checkbox" id="singing">
+              <label class="form-check-label" for="singing">Singing </label>
+              <input class="form-check-input" value="chess" type="checkbox" id="chess">
+              <label class="form-check-label" for="chess">Chess </label>
+              <input class="form-check-input" value="guitar" type="checkbox" id="guitar">
+              <label class="form-check-label" for="guitar">Guitar </label>
+              <input class="form-check-input" value="dancing" type="checkbox" id="dancing">
+              <label class="form-check-label" for="dancing">Dancing </label>
+              <input class="form-check-input" value="sleeping" type="checkbox" id="sleeping">
+              <label class="form-check-label" for="sleeping">Sleeping </label>
+          </fieldset>
+  
+          <label class="input-group-text" for="additional-comments" id="comments-label">If you have addtional comments, kindly share.</label>
+          <textarea  id="additional-comments" class="form-control input-group-text" placeholder="Addtional Comments"></textarea>
+          <br>
+  
+          <button class="btn btn-primary" id="submit">submit</button>
+    </section>
     </form>
 
     <script src="js/index.js"></script>
